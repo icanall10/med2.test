@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+    <link rel="stylesheet" href="./css/selectize.css">
+    <link rel="stylesheet" href="./js/colorbox/example2/colorbox.css">
+
+    <link rel="stylesheet" href="./css/style.css?v=1.17">
+    <link rel="stylesheet" href="./css/tablet.css?v=1.17">
+    <link rel="stylesheet" href="./css/mobile.css?v=1.17">
+
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/datepicker.min.js"></script>
+    <script type="text/javascript" src="./js/selectize.min.js"></script>
+    <script type="text/javascript" src="./js/colorbox/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="./js/helpers.js"></script>
+    <script type="text/javascript" src="./js/js.js?v=1.17"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body class="is-home-page">
+
+
+<div id="header">
+    <div class="container inner flex">
+        <div class="menu-link-and-logo flex flex-middle">
+            <div class="only-tablet-or-mobile">
+                <a href="#" class="menu-link" data-menu-popup-toggle-link>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <a href="#" class="logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="info flex">
+            <div class="contacts-and-menu">
+                <div class="contacts flex flex-center">
+                    <div class="item item-address">Москва, ул. Б. Черкизовская, д. 5</div>
+                    <div class="item item-phone">+7 (495) 369-61-64</div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#" data-services-dropdown-link="clinic">Клиника</a></li>
+                    <li><a href="#" data-services-dropdown-link="services">Услуги</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="order-and-social-links">
+                <div class="order">
+                    <a href="#" class="button" data-modal-link="order-form">Запись на прием</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="item item-fb"></a>
+                    <a href="#" class="item item-ig"></a>
+                    <a href="#" class="item item-vk"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="menu-popup" data-menu-popup>
+    <a href="#" class="close" data-menu-popup-toggle-link></a>
+    <div class="container inner flex flex-column">
+        <div class="links flex">
+            <ul class="menu">
+                <li><a href="#">Клиника</a></li>
+                <li><a href="#" data-menu-popup-services-link>Услуги</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Вопросы</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="services" data-menu-popup-sercices>
+                <li><a href="#">Контурная пластика</a></li>
+                <li><a href="#">Плазмолифтинг</a></li>
+                <li><a href="#">Ботокс</a></li>
+                <li><a href="#">Подтяжка нитями</a></li>
+                <li><a href="#">Лазерная шлифовка</a></li>
+                <li><a href="#">Устранение целлюлита</a></li>
+                <li><a href="#">Фотоэпиляция</a></li>
+                <li><a href="#">Удаление новообразований</a></li>
+
+                <li><a href="#">Микротоковая терапия</a></li>
+                <li><a href="#">Лечение постакне</a></li>
+                <li><a href="#">Пилинги</a></li>
+                <li><a href="#">Перманентный макияж</a></li>
+                <li><a href="#">Дерматология</a></li>
+                <li><a href="#">Трихология</a></li>
+                <li><a href="#">Подология</a></li>
+            </ul>
+        </div>
+        <div class="social-and-phone flex">
+            <div class="social-links">
+                <a href="#" class="item item-fb"></a>
+                <a href="#" class="item item-ig"></a>
+                <a href="#" class="item item-vk"></a>
+            </div>
+            <div class="phone">+7 (495) 369-61-64</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="services-dropdown-wrapper">
+
+    <div class="services-dropdown" data-services-dropdown="clinic">
+        <div class="content flex flex-nowrap">
+            <ul class="menu flex">
+                <li><a href="#">Плазмолифтинг</a></li>
+                <li><a href="#">Ботокс</a></li>
+                <li><a href="#">Подтяжка нитями</a></li>
+                <li><a href="#">Микротоковая терапия</a></li>
+
+                <li><a href="#">Лечение постакне</a></li>
+                <li><a href="#">Пилинги</a></li>
+                <li><a href="#">Перманентный макияж</a></li>
+            </ul>
+            <div class="info flex flex-column flex-center">
+                <div class="inner">
+                    <div class="name">DYSPORT</div>
+                    <div class="price">100 руб. за 1 ЕД</div>
+                    <div class="text">Коррекция мимических морщин:</div>
+                    <div class="more">
+                        <a href="#" class="button button-green">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-dropdown" data-services-dropdown="services">
+        <div class="content flex flex-nowrap">
+            <ul class="menu flex">
+                <li><a href="#">Контурная пластика</a></li>
+                <li><a href="#">Плазмолифтинг</a></li>
+                <li><a href="#">Ботокс</a></li>
+                <li><a href="#">Подтяжка нитями</a></li>
+                <li><a href="#">Лазерная шлифовка</a></li>
+                <li><a href="#">Устранение целлюлита</a></li>
+                <li><a href="#">Фотоэпиляция</a></li>
+                <li><a href="#">Удаление новообразований</a></li>
+
+                <li><a href="#">Микротоковая терапия</a></li>
+                <li><a href="#">Лечение постакне</a></li>
+                <li><a href="#">Пилинги</a></li>
+                <li><a href="#">Перманентный макияж</a></li>
+                <li><a href="#">Дерматология</a></li>
+                <li><a href="#">Трихология</a></li>
+                <li><a href="#">Подология</a></li>
+            </ul>
+            <div class="info flex flex-column flex-center">
+                <div class="inner">
+                    <div class="name">DYSPORT</div>
+                    <div class="price">100 руб. за 1 ЕД</div>
+                    <div class="text">Коррекция мимических морщин:</div>
+                    <div class="more">
+                        <a href="#" class="button button-green">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="center">
+    <div id="center-inner">
+        <div id="content">
+
+            <div class="slider-block block">
+                <div class="container">
+                    <div class="owl-carousel">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/slide1.png" alt="">
+                            </div>
+                            <div class="info flex flex-middle flex-left">
+                                <div class="inner">
+                                    <div class="title">Плазмолифтинг лица</div>
+                                    <div class="text">Коррекция мимических морщин</div>
+                                    <div class="price">5000 р.</div>
+                                    <div class="more">
+                                        <a href="#" class="button button-green">Подробнее</a>
+                                    </div>
+                                    <div class="discount">-15%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/slide2.png" alt="">
+                            </div>
+                            <div class="info flex flex-middle flex-left">
+                                <div class="inner">
+                                    <div class="title">Плазмолифтинг лица</div>
+                                    <div class="text">Коррекция мимических морщин</div>
+                                    <div class="price">5000 р.</div>
+                                    <div class="more">
+                                        <a href="#" class="button button-green">Подробнее</a>
+                                    </div>
+                                    <div class="discount">-15%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/slide3.png" alt="">
+                            </div>
+                            <div class="info flex flex-middle flex-left">
+                                <div class="inner">
+                                    <div class="title">Плазмолифтинг лица</div>
+                                    <div class="text">Коррекция мимических морщин</div>
+                                    <div class="price">5000 р.</div>
+                                    <div class="more">
+                                        <a href="#" class="button button-green">Подробнее</a>
+                                    </div>
+                                    <div class="discount">-15%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trust-us-block block">
+                <div class="container inner flex">
+                    <div class="left">
+                        <div class="title">Нам доверяют уже более 15 лет!</div>
+                        <div class="text">
+                            За это время мы успели накопить бесценный опыт в диагностике и лечении дерматопатологий,
+                            освоили
+                            современные методики устранения инволюционных изменений кожи. Техническое оснащение клиники
+                            было
+                            существенно расширено и обновлено, благодаря чему теперь мы можем предложить вам полный
+                            спектр
+                            услуг аппаратной косметологии.
+                        </div>
+                    </div>
+                    <div class="right flex">
+                        <div class="img">
+                            <img src="./img/trust-us.png" alt="">
+                        </div>
+                        <div class="text">
+                            Мы являемся клинической базой Московского областного научно-исследовательского клинического
+                            института (МОНИКИ им. М.Ф. Владимирского)!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-block block">
+                <div class="only-desktop">
+                    <div class="container inner flex">
+                        <div class="col col-1 flex">
+                            <div class="block-title">Услуги</div>
+                            <a href="#" class="item item-1">
+                                <span class="name">Контурная пластика</span>
+                            </a>
+                        </div>
+                        <div class="col col-2 flex">
+                            <a href="#" class="item item-2">
+                                <span class="name">Аппаратная косметология</span>
+                            </a>
+                            <a href="#" class="item item-3">
+                                <span class="name">Трихология</span>
+                            </a>
+                        </div>
+                        <div class="col col-3 flex">
+                            <a href="#" class="item item-4">
+                                <span class="name">Дерматология</span>
+                            </a>
+                            <a href="#" class="item item-5">
+                                <span class="name">Подология</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="only-tablet">
+                    <div class="container">
+                        <div class="block-title">Услуги</div>
+                    </div>
+                    <div class="container inner flex flex-nowrap">
+                        <div class="col col-1 flex">
+                            <div class="row row-1 flex">
+                                <a href="#" class="item item-1">
+                                    <span class="name">Контурная пластика</span>
+                                </a>
+                            </div>
+                            <div class="row row-2 flex">
+                                <a href="#" class="item item-4">
+                                    <span class="name">Дерматология</span>
+                                </a>
+                                <a href="#" class="item item-5">
+                                    <span class="name">Подология</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-2 flex">
+                            <a href="#" class="item item-2">
+                                <span class="name">Аппаратная косметология</span>
+                            </a>
+                            <a href="#" class="item item-3">
+                                <span class="name">Трихология</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="only-mobile">
+                    <div class="container">
+                        <div class="block-title">Услуги</div>
+                    </div>
+                    <div class="container inner flex flex-nowrap">
+                        <a href="#" class="item item-1">
+                            <span class="name">Контурная пластика</span>
+                        </a>
+                        <a href="#" class="item item-2">
+                            <span class="name">Аппаратная косметология</span>
+                        </a>
+                        <a href="#" class="item item-3">
+                            <span class="name">Трихология</span>
+                        </a>
+                        <a href="#" class="item item-4">
+                            <span class="name">Дерматология</span>
+                        </a>
+                        <a href="#" class="item item-5">
+                            <span class="name">Подология</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-block block">
+                <div class="container inner flex">
+                    <div class="project">
+                        <div class="name">#СвободаОтАкне!</div>
+                        <div class="text">
+                            Наша клиника является участником проекта «Свобода от акне» бренда La Roche-Posay.
+                            Кампания направлена на улучшение качества жизни людей с жирной проблемной кожей, склонной к
+                            акне.
+                        </div>
+                        <div class="more">
+                            <a href="#">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="ask-doctor">
+                        <div class="title">Вопрос врачу</div>
+                        <div class="more">
+                            <a href="#" class="button button-empty" data-modal-link="ask-form">Задать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-2-block block">
+                <div class="container inner flex">
+                    <div class="item item-1">
+                        <div class="img">
+                            <img src="./img/icon1.png" alt="">
+                        </div>
+                        <div class="name">УЗ SMAS-лифтинг</div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="img">
+                            <img src="./img/icon2.png" alt="">
+                        </div>
+                        <div class="name">Ботокс</div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="img">
+                            <img src="./img/icon3.png" alt="">
+                        </div>
+                        <div class="name">Контурная пластика</div>
+                    </div>
+                    <div class="item item-4">
+                        <div class="img">
+                            <img src="./img/icon4.png" alt="">
+                        </div>
+                        <div class="name">Подология</div>
+                    </div>
+                    <div class="item item-5">
+                        <div class="img">
+                            <img src="./img/icon5.png" alt="">
+                        </div>
+                        <div class="name">Лечение акне</div>
+                    </div>
+                    <div class="item item-6">
+                        <div class="img">
+                            <img src="./img/icon6.png" alt="">
+                        </div>
+                        <div class="name">Удаление родинок</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-before-after-block block">
+                <div class="container inner flex flex-nowrap">
+                    <div class="left">
+                        <div class="block-title">Фото до и после</div>
+                        <div class="items">
+                            <ul>
+                                <li><a href="#" class="active" data-photo-before-after-link="1">Акне</a></li>
+                                <li><a href="#" data-photo-before-after-link="2">Контурная пластика</a></li>
+                                <li><a href="#" data-photo-before-after-link="3">Плазмолифтинг</a></li>
+                                <li><a href="#" data-photo-before-after-link="4">Мезотерапия</a></li>
+                                <li><a href="#" data-photo-before-after-link="5">Пилинг</a></li>
+                                <li><a href="#" data-photo-before-after-link="6">Дерматит</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="slider active" data-photo-before-after-slider="1">
+                            <div class="owl-carousel">
+                                <div class="slide flex flex-nowrap">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/before.png" alt="">
+                                        </div>
+                                        <div class="name">до</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/after.png" alt="">
+                                        </div>
+                                        <div class="name">после</div>
+                                    </div>
+                                </div>
+                                <div class="slide flex">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/before.png" alt="">
+                                        </div>
+                                        <div class="name">до</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/after.png" alt="">
+                                        </div>
+                                        <div class="name">после</div>
+                                    </div>
+                                </div>
+                                <div class="slide flex">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/before.png" alt="">
+                                        </div>
+                                        <div class="name">до</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/after.png" alt="">
+                                        </div>
+                                        <div class="name">после</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav-and-count">
+                                <div class="nav">
+                                    <a href="#" class="prev" data-photo-before-after-slider-prev></a>
+                                    <a href="#" class="next" data-photo-before-after-slider-next></a>
+                                </div>
+                                <div class="count">
+                                    <span data-photo-before-after-slider-index>0</span>/<span
+                                            data-photo-before-after-slider-total>0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider" data-photo-before-after-slider="2">
+                            <div class="owl-carousel">
+                                <div class="slide flex flex-nowrap">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/before.png" alt="">
+                                        </div>
+                                        <div class="name">до</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/after.png" alt="">
+                                        </div>
+                                        <div class="name">после</div>
+                                    </div>
+                                </div>
+                                <div class="slide flex">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/before.png" alt="">
+                                        </div>
+                                        <div class="name">до</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/after.png" alt="">
+                                        </div>
+                                        <div class="name">после</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nav-and-count">
+                                <div class="nav">
+                                    <a href="#" class="prev" data-photo-before-after-slider-prev></a>
+                                    <a href="#" class="next" data-photo-before-after-slider-next></a>
+                                </div>
+                                <div class="count">
+                                    <span data-photo-before-after-slider-index>0</span>/<span
+                                            data-photo-before-after-slider-total>0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="doctors-block block">
+                <div class="block-header">
+                    <div class="container inner flex">
+                        <div class="more">
+                            <a href="#" class="button button-empty">Все специалисты</a>
+                        </div>
+                        <div class="info">
+                            <div class="block-title">Специалисты</div>
+                            <div class="text">
+                                Специалисты дермато-косметологической клиники Медэстетик прошли обучение методике
+                                коррекции
+                                инволюционных изменений лица препаратами Juvederm Voluma, Juvederm Volbella и Juvederm
+                                Volift,
+                                созданными компанией Allergan по патентованной технологии Vycross.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="doctors-list owl-carousel">
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/doctor1.png" alt="">
+                            </div>
+                            <div class="info flex">
+                                <div class="name">
+                                    <a href="#">Баграмова Гаянэ Эрнстовна</a>
+                                </div>
+                                <div class="text-and-experience">
+                                    <div class="text">
+                                        Доктор медицинских наук,<br>
+                                        главный врач
+                                    </div>
+                                    <div class="experience">Стаж 21 год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/doctor2.png" alt="">
+                            </div>
+                            <div class="info flex">
+                                <div class="name">
+                                    <a href="#">Золоева Эльвира Ибрагимовна</a>
+                                </div>
+                                <div class="text-and-experience">
+                                    <div class="text">
+                                        Доктор медицинских наук,<br>
+                                        главный врач
+                                    </div>
+                                    <div class="experience">Стаж 21 год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/doctor3.png" alt="">
+                            </div>
+                            <div class="info flex">
+                                <div class="name">
+                                    <a href="#">Деменкова Светлана Анатольевна</a>
+                                </div>
+                                <div class="text-and-experience">
+                                    <div class="text">
+                                        Доктор медицинских наук,<br>
+                                        главный врач
+                                    </div>
+                                    <div class="experience">Стаж 21 год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/doctor4.png" alt="">
+                            </div>
+                            <div class="info flex">
+                                <div class="name">
+                                    <a href="#">Баграмова Гаянэ Эрнстовна</a>
+                                </div>
+                                <div class="text-and-experience">
+                                    <div class="text">
+                                        Доктор медицинских наук,<br>
+                                        главный врач
+                                    </div>
+                                    <div class="experience">Стаж 21 год</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img">
+                                <img src="./img/doctor2.png" alt="">
+                            </div>
+                            <div class="info flex">
+                                <div class="name">
+                                    <a href="#">Баграмова Гаянэ Эрнстовна</a>
+                                </div>
+                                <div class="text-and-experience">
+                                    <div class="text">
+                                        Доктор медицинских наук,<br>
+                                        главный врач
+                                    </div>
+                                    <div class="experience">Стаж 21 год</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-block block">
+                <div class="block-header">
+                    <div class="container">
+                        <div class="block-title">Расположение</div>
+                        <div class="text">
+                            Наша клиника, специализирующаяся на врачебной косметологии, удачно расположена, в нескольких
+                            минутах ходьбы от метро. Вы сможете без труда добраться до нас и получить качественные
+                            медицинские и косметологические услуги по доступным ценам. Косметологи, дерматологи,
+                            трихологи и
+                            врачи других специальностей обладают высоким уровнем профессионализма, который
+                            подтверждается
+                            соответствующими дипломами и сертификатами.
+                        </div>
+                    </div>
+                </div>
+                <div class="container inner flex">
+                    <div class="map" id="map"></div>
+                    <div class="info">
+                        <div class="contacts">
+                            <div class="item">
+                                <div class="name">Адрес:</div>
+                                <div class="value">107061 г. Москва, ул. Б.Черкизовская, д.5</div>
+                            </div>
+
+                            <div class="item">
+                                <div class="name">Телефон</div>
+                                <div class="phone">+7 (495) 369-61-64</div>
+                            </div>
+
+                            <div class="item">
+                                <div class="name">Мы работаем:</div>
+                                <div class="value">
+                                    Понедельник — пятница: с 10:00 до 20:00
+                                    Суббота: с 10:00 до 16:00
+                                    Воскресенье: выходной
+                                </div>
+                            </div>
+
+                            <div class="contacts-text">
+                                Прием проводится строго по предварительной записи.
+                                По договоренности возможен прием в более позднее время — до 24:00
+                            </div>
+
+                            <div class="order">
+                                <a href="#" class="button" data-modal-link="order-form">Записаться на прием</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <div class="container inner flex">
+        <div class="logo-and-copyright flex flex-column">
+            <a href="#" class="logo">
+                <img src="./img/logo-footer.png" alt="">
+            </a>
+            <div class="copyright">
+                © 2018 ООО Медицинская эстетика<br>
+                Все права защищены
+            </div>
+        </div>
+
+        <div class="menu-and-contacts flex">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Специалисты</a></li>
+                    <li><a href="#">О клинике</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Вопрос / Ответ</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="contacts-and-social flex flex-column">
+                <div class="contacts">
+                    <div class="phone">+7 (495) 369-61-64</div>
+                    <div class="address">107061 г. Москва, ул. Б.Черкизовская, д.5</div>
+                    <div class="work-time">
+                        <div class="days flex">
+                            <div class="day">Пн</div>
+                            <div class="day">Вт</div>
+                            <div class="day">Ср</div>
+                            <div class="day">Чт</div>
+                            <div class="day">Пт</div>
+                            <div class="day short">Сб</div>
+                            <div class="day off">Вс</div>
+                        </div>
+                        <div class="times flex">
+                            <div class="time">10:00 - 20:00</div>
+                            <div class="time">10:00 - 16:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="item item-fb"></a>
+                    <a href="#" class="item item-ig"></a>
+                    <a href="#" class="item item-vk"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="order-form">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="inner">
+            <div class="modal-header">
+                <div class="modal-title">Запись на прием</div>
+                <a href="#" class="modal-close" data-modal-close>Закрыть</a>
+            </div>
+            <form action="#" class="order-form">
+                <div class="form-inner flex">
+                    <div class="form-group item-name">
+                        <input type="text" name="name" placeholder="ФИО">
+                    </div>
+                    <div class="form-group item-phone">
+                        <label for="#">Телефон</label>
+                        <input type="text" name="phone" placeholder="+7 (___) ___ __ __">
+                    </div>
+                    <div class="form-group item-email">
+                        <input type="text" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group item-date">
+                        <input type="text" name="date" placeholder="Дата визита">
+                    </div>
+                    <div class="form-group item-time">
+                        <input type="text" name="time" placeholder="Желаемое время">
+                    </div>
+                    <div class="form-group item-text">
+                        <textarea name="text" rows="4" placeholder="Повод обращения"></textarea>
+                    </div>
+                </div>
+                <div class="from-group item-actions">
+                    <div class="form-group">
+                        <button>Записаться</button>
+                    </div>
+                    <div class="form-group item-rules">
+                        Нажимая на кнопку, вы принимаете условия<br>
+                        <a href="#" target="_blank">пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="ask-form">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="inner">
+            <div class="modal-header">
+                <div class="modal-title">Задать вопрос</div>
+                <a href="#" class="modal-close" data-modal-close>Закрыть</a>
+            </div>
+            <form action="#" class="ask-form">
+                <div class="form-inner">
+                    <div class="form-group item-date">
+                        <select name="subject">
+                            <option value="0">Тема вопроса</option>
+                            <option value="1">Косметология</option>
+                            <option value="2">Дерматология</option>
+                            <option value="3">Общие вопросы</option>
+                        </select>
+                    </div>
+                    <div class="form-group item-phone">
+                        <label for="#">Можно прикрепить файлы</label>
+                        <input type="file" name="file" multiple>
+                    </div>
+                    <div class="form-group item-text">
+                        <textarea name="text" rows="4" placeholder="Вопрос"></textarea>
+                    </div>
+                </div>
+                <div class="from-group item-actions">
+                    <div class="form-group">
+                        <button>Отправить</button>
+                    </div>
+                    <div class="form-group item-rules">
+                        Нажимая на кнопку, вы принимаете условия<br>
+                        <a href="#" target="_blank">пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
